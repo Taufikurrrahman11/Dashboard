@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import streamlit.components.v1 as stc
 import pandas as pd
@@ -66,11 +65,6 @@ def create_rfm_df(df):
     return rfm_df
 
 all_df = pd.read_csv("all_data.csv")
-file_path = "all_data.csv"
-if os.path.exists(file_path):
-    all_df = pd.read_csv(file_path)
-else:
-    print(f"Error: File '{file_path}' not found.")
 
 datetime_columns = ["order_estimated_delivery_date", "order_purchase_timestamp"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
