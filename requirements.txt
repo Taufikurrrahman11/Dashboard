@@ -1,7 +1,6 @@
-pandas as pd
-matplotlib.pyplot as plt
-seaborn as sns
-streamlit as st
-babel.numbers
-sns.set(style='dark')
-scikit-learn
+pandas==1.5.3
+matplotlib==3.8.2
+seaborn==0.13.0
+streamlit
+Babel==2.13.1
+
